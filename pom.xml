@@ -14,7 +14,7 @@
     <name>camel-microservice-demo1</name>
     <description>Demo project for Spring Boot</description>
     <properties>
-        <java.version>16</java.version>
+        <java.version>15</java.version>
         <kotlin.version>1.5.20</kotlin.version>
         <camel.version>3.10.0</camel.version>
     </properties>
@@ -57,6 +57,11 @@
             <artifactId>camel-swagger-java-starter</artifactId>
             <version>${camel.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-aws-ec2-starter</artifactId>
+            <version>3.4.6</version>
+        </dependency>
 
 <!--        <dependency>-->
 <!--            <groupId>org.apache.camel</groupId>-->
@@ -81,6 +86,12 @@
 <!--            <version>2.25.3</version>-->
 <!--        </dependency>-->
 
+        <!-- https://mvnrepository.com/artifact/com.github.ulisesbocchio/jasypt-spring-boot-starter -->
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>3.0.3</version>
+        </dependency>
 
 
 
